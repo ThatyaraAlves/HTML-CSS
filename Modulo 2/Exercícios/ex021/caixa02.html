@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            background-color: #615E2E;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+        header{
+            background-color: #E0DB6A;
+            padding:20px 10px 15px 10px;
+            margin: 5px ; 
+            border-radius: 10px;
+        }
+        a.nav{
+            background-color: #61604B;
+            padding: 5px;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 2px 2px 2px #0000006e;
+            color: rgb(247, 247, 247);
+            margin: 15px;
+            
+
+
+        }
+        h1{
+            text-align: center;
+            margin:0px;
+        
+        }
+       
+        h2{
+            text-align: center;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        main{
+            background-color: rgb(248, 246, 244);
+            padding:10px 10px 15px 10px;
+            margin: 5px ; 
+            border-radius: 10px;
+            width: 600px;
+            text-align: justify;
+            display: inline-block;
+            
+        }
+        article{
+            background-color: #E6E3B1;
+            border-radius: 5px;
+            margin: 0px;
+            padding:5px;
+        }
+       
+        article > aside{
+            background-color: #ADA951;
+        }
+        footer{
+            background-color: rgb(10, 10, 10);
+            color: white;
+            text-align: center;
+            padding: 0.2px;
+            margin: 0px;
+
+        }
+        article.saibamais{
+            background-color: #E6E3B1;
+            border-radius: 5px;
+            margin: 0px;
+            padding:10px;
+
+
+        }
+        div{
+            background-color: rgb(243, 241, 237);
+            padding:10px 10px 10px 10px;
+            margin:10px; 
+            border-radius: 10px;
+            width: 150px;
+            height: 242px;
+            text-align: justify;
+            display: inline-block;
+            
+
+        }
+        a.saibamais{
+            background-color: #61604B;
+            padding: 5px;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 2px 2px 2px #0000006e;
+            color: rgb(247, 247, 247);
+            margin: 10px;
+            display: block;
+            width: 97px;
+
+        }
+        section#as{
+            background-color: rgb(248, 246, 244);
+            padding:10px 10px 15px 10px;
+            margin: 5px ; 
+            border-radius: 10px;
+            width: 470px;
+            text-align: justify;
+            display: inline-block;
+
+        }
+       a.as{
+            background-color: #E6E3B1;
+            
+            text-decoration: none;
+            
+            color: rgb(19, 18, 18);
+            margin: 10px;
+            display: block;
+            width: 277px;
+       }
+       a.as:hover{
+           text-decoration: underline;
+
+       }
+    </style>
+
+</head>
+<body>
+    <header>
+    <h1>Meu site</h1>
+    <nav>
+        <a class="nav" href="https://www.youtube.com/watch?v=NNiie_zmSr8" target="_blank">Video</a>
+        <a class="nav" href="https://www.youtube.com/watch?v=awoFZaSuko4" target="_blank">Vídeo</a>
+        <a class="nav" href="https://www.youtube.com/watch?v=BciS5krYL80" target="_blank">Video</a>
+        <a class="nav" href="https://www.youtube.com/watch?v=djV11Xbc914" target="_blank">Video</a>
+    </nav>
+    </header>
+    <main>
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat quam, 
+                    voluptate soluta totam dolor beatae amet quidem optio temporibus doloremque 
+                    culpa impedit necessitatibus ducimus. Dicta odio ipsa doloremque corporis 
+                    recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eos 
+                    consequatur soluta, earum animi corrupti quas vitae quisquam, nisi voluptate ipsum 
+                    ducimus accusantium magni sit accusamus nostrum blanditiis assumenda veniam?</p>
+                    <aside>
+                        <p>Artigo escrito por Manoela da Cunha</p>
+                    </aside>
+            </article>
+            
+        </section>
+    </main>
+    <div>
+        <article class="saibamais">
+            <h2 class="saibamais">Saiba Mais</h2>
+        
+                <a class="saibamais" href="#">Agenda</a>
+                <a class="saibamais" href="#">Programação</a>
+                <a class="saibamais" href="#">Contatos</a>
+                <a class="saibamais" href="#">Doações</a>
+        
+        </article>
+    </div>
+    <section id="as">
+        <article>
+            <h2>Ações e serviços</h2>
+            <ul>
+                <li><a class="as" href="#">Simulador de documentos</a>
+                <li><a class="as" href="#">Regularização de Pagamentos</a></li>
+                <li><a class="as" href="#">Formulário para troca de modalidade</a></li>
+                <li><a class="as" href="#">Cadastramento de artigos acadêmicos</a></li>
+                <li><a class="as" href="#">Incrições em processos seletivos</a></li>
+            </ul>
+
+        </article>
+    </section>
+    <footer>
+        <p>Desenvolvido por Thatyara A. Gomes</p>
+    </footer>
+</body>
+</html>

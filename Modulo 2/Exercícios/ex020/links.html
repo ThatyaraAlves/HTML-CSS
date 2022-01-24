@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* SELETORES PERSONALIZADOS
+         # = id
+         . = class
+         : = pseudo-class
+         :: = pseudo-elemento
+         > = children */
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(192, 177, 172);
+        }
+
+        a{
+            color: rgb(50, 124, 84);
+            font: normal bold 1.3em Arial;
+            text-decoration: none;
+
+        }
+        /*pseudoclasses*/
+        /*a:visited{
+            color: rgb(72, 158, 111); /*marca os sites já visitados com a cor desejada*/
+        */
+
+        a:hover{    /*aparece ao passar o mouse em cima*/
+            text-decoration: underline;
+        }
+        a:active{  /*quando se clica no link mudaria a cor*/
+            color: red;
+        }
+        /*pseudo-elementos*/
+       
+        .destaque{
+            background-color: rgb(23, 129, 23);
+            color: rgb(115, 170, 243);
+       }
+       
+        .destaque::before{
+            
+            content: '☞ ';
+            text-decoration: none;
+            color: black;
+            }
+        .destaque::after{
+            content: ' ☜';
+            text-decoration: none;
+            color: rgb(10, 9, 9);
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.alura.com.br/" target="_blank">Alura</a>
+        </li>
+        <li><a class="destaque" href="https://www.cursoemvideo.com/" target="_blank">Curso em vídeo</a></li>
+        <li><a href="https://digitalinnovation.one/" target="_blank">Dio</a></li>
+
+    </ul>
+</body>
+</html>
